@@ -1,0 +1,63 @@
+.popular{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+.popular h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.popular hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+.popular-in-womens{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+    display: flex;
+}
+
+@media only screen and (max-width: 768px) {
+    .popular {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px; /* Added padding for better spacing */
+    }
+    
+    .popular h1 {
+        color: #171717;
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 20px; /* Added margin-bottom for better spacing */
+    }
+    
+    .popular hr {
+        width: 50%; /* Reduced width for better proportion */
+        height: 4px;
+        border-radius: 8px;
+        background: #252525;
+    }
+    
+    .popular-in-womens {
+        margin-top: 30px;
+        display: grid; /* Changed to grid for better layout control */
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted grid layout for responsiveness */
+        gap: 20px;
+        justify-items: center; /* Center items horizontally */
+    }
+    
+    .popular-in-womens .item {
+        width: 100%; /* Adjusted width to fill the grid cell */
+        max-width: 250px; /* Added max-width for better control */
+    }
+    
+}

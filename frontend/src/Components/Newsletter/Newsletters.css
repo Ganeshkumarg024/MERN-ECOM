@@ -1,0 +1,71 @@
+.newsletters{
+    width: 65%;height: 40vh;
+    display: flex;flex-direction: column;
+    align-items: center;
+    justify-content: center;margin: auto;
+    padding:  0px 140px;
+    margin-bottom: 150px;
+    background:linear-gradient(180deg,#fde1ff 0%,#e1ffea22 60%);
+    gap: 30px;
+}
+.newsletters h1{
+    color: #454545;
+    font-size: 55px;
+    font-weight: 600;
+}
+.newsletters p{
+    columns: #454545;
+    font-style: 20px;
+}
+
+.newsletters div{
+     display: flex;align-items: center;
+     justify-content: center;
+     background-color: white;
+     width: 730px;height: 70px;border-radius: 80px;
+     border:  1px solid#e3e3e3;
+}
+.newsletters input{
+    width: 500px;
+    margin-left: 30px;
+    border: none;
+    outline: none;
+    color: #616161;
+    font-family: poppins;
+    font-size: 16px;
+}
+
+.newsletters div button{
+    width: 200px;height: 70px;
+    border-radius: 80px;
+    background-color: white;
+    font-style: 16px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    .newsletters {
+        padding: 10px; /* Reduced padding for smaller screens */
+        margin-bottom: 50px; /* Reduced margin-bottom for better spacing */
+    }
+
+    .newsletters h1 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+
+    .newsletters p {
+        font-size: 16px; /* Adjusted font size for smaller screens */
+    }
+
+    .newsletters input {
+        max-width: 100%; /* Adjusted max-width for better responsiveness */
+    }
+
+    .newsletters div button {
+        width: 50%; /* Adjusted width for better responsiveness */
+        max-width: 150px; /* Adjusted max-width for better responsiveness */
+        height: 40px; /* Reduced height for better appearance */
+        border-radius: 20px; /* Reduced border radius for better appearance */
+        font-size: 14px; /* Adjusted font size for better responsiveness */
+    }
+}

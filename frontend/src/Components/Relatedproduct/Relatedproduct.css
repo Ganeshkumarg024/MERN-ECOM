@@ -1,0 +1,43 @@
+.ralatedproduct{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 90vh;
+}
+.ralatedproduct h1{
+    color: #171717;
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.ralatedproduct hr{
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #252525;
+}
+
+.related-product-items{
+    margin-top: 50px;
+    display: flex;
+    gap: 30px;
+}
+@media only screen and (max-width: 768px) {
+    .ralatedproduct h1 {
+        font-size: 28px; /* Adjusted font size for smaller screens */
+    }
+
+    .ralatedproduct hr {
+        width: 100px; /* Adjusted width for smaller screens */
+        height: 3px; /* Adjusted height for smaller screens */
+    }
+
+    .related-product-items {
+        margin-top: 20px; /* Adjusted margin-top for smaller screens */
+    }
+
+    .related-product-items .item {
+        width: 100%; /* Adjusted width to fit one item per row on smaller screens */
+    }
+}

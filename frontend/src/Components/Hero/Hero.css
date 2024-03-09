@@ -1,0 +1,65 @@
+.hero{
+    height: 100vh;
+    background: linear-gradient(180deg,#fde1ff,#e1ffea22 60%);
+    display: flex;
+}
+.hero-left{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding-left: 180px;
+    line-height: 1.1;
+}
+.hero-left h2{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+}
+.hero-left p{
+    color: black;
+    font-size: 100px;
+    font-weight: 700;
+}
+.hand-hand-icon img{
+    width: 150px;
+}
+.hero-latest-btn{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    grid-area: 15px;
+    width: 310px;
+    height: 70px;
+    margin-top: 30px;
+    background-color: red;
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    border-radius: 75px;
+}
+.hero-latest-btn div{ display: flex;justify-self: center;}
+
+.hero-right{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}@media only screen and (min-width: 768px) {
+    .hero {
+        flex-direction: row; /* Adjusted flex-direction for larger screens */
+    }
+
+    .hero-left {
+        padding: 0 50px; /* Adjusted padding for larger screens */
+    }
+
+    .hero-latest-btn {
+        width: 310px; /* Restored original width for larger screens */
+        height: 70px; /* Restored original height for larger screens */
+        margin-top: 30px; /* Restored original margin for larger screens */
+        font-size: 22px; /* Restored original font size for larger screens */
+        border-radius: 75px; /* Restored original border radius for larger screens */
+    }
+}
